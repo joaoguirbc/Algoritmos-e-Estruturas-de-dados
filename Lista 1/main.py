@@ -1,48 +1,31 @@
-from list_of_array import ArrayList
-from lista_encadeada_simples import ListaEncadeada
+from lista_encadeada_dupla import ListaEncadeadaDupla
 
-lista_1 = ArrayList(2)
+led_1 = ListaEncadeadaDupla()
 
-lista_1.add('Guilherme')
+led_1.add('Guilherme')
 
-lista_1.addAll(0, ['João', 'Pedro', 'Marcelo'])
+led_1.add('Carol', 1)
 
-#print(lista_1)
+print(led_1)
 
-lista_encadeada_1 = ListaEncadeada()
+led_1.addAll(2, ['João', 'Pedro', 'Marcelo'])
 
-lista_encadeada_1.add('Argentina')
-lista_encadeada_1.add('Brasil')
-lista_encadeada_1.add('Uruguai')
-lista_encadeada_1.add('USA')
+led_1.remove('Pedro')
 
-lista_encadeada_1.addAll(2, ['Espanha', 'França'])
+led_1.remove('Luc')
 
-print(lista_encadeada_1)
+led_1.removeAt(2)
 
-lista_encadeada_1.remove('China')
+print(led_1)
 
-lista_encadeada_1.remove('USA')
-lista_encadeada_1.remove('Brasil')
+print(led_1.getElement(2))
 
-print(lista_encadeada_1)
+print(led_1.isEmpty())
 
-lista_encadeada_1.removeAt(2)
+print(led_1.size())
 
-print(lista_encadeada_1)
+led_1.clear()
 
-print(lista_encadeada_1.getElement(0))
-print(lista_encadeada_1.getElement(1))
-print(lista_encadeada_1.getElement(2))
+print(led_1.isEmpty())
 
-print(lista_encadeada_1.isEmpty())
-
-print(lista_encadeada_1.size())
-
-lista_encadeada_1.clear()
-
-print(lista_encadeada_1.isEmpty())
-
-print(lista_encadeada_1.size())
-
-#print(lista_encadeada_1)
+print(led_1.size())
