@@ -1,31 +1,21 @@
-from lista_encadeada_dupla import ListaEncadeadaDupla
+from lista_encadeada import ListaDuplamenteEncadeada
 
-led_1 = ListaEncadeadaDupla()
+lde_1 = ListaDuplamenteEncadeada()
 
-led_1.add('Guilherme')
+lde_1.add('Davi')
 
-led_1.add('Carol', 1)
+print(lde_1)
 
-print(led_1)
+lde_1.add('Cabeça', 0)
 
-led_1.addAll(2, ['João', 'Pedro', 'Marcelo'])
+print(lde_1)
 
-led_1.remove('Pedro')
+lde_1.removeAt(0)
 
-led_1.remove('Luc')
+print(lde_1)
 
-led_1.removeAt(2)
+lde_1.addAll(1, ['João', 'Henrique', 'Lucas'])
 
-print(led_1)
+lde_1.clear()
 
-print(led_1.getElement(2))
-
-print(led_1.isEmpty())
-
-print(led_1.size())
-
-led_1.clear()
-
-print(led_1.isEmpty())
-
-print(led_1.size())
+print(lde_1.isEmpty())
